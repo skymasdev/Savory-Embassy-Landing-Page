@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url('./Images/1.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+  color: orange;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  color: orange;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Search Box */
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.srch {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid orange;
+  background: transparent;
+  color: white;
+  border-radius: 5px 0 0 5px;
+}
+
+.btn {
+  background: orange;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+/* Hero Section */
+.content {
+  text-align: center;
+  margin: 100px auto;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+span {
+  color: orange;
+}
+
+.par {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.cn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: orange;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.cn:hover {
+  background-color: transparent;
+  color: white;
+  border: orange 1px solid;
+}
+
+/* Form Section */
+.form {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 350px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.form h2 {
+  color: orange;
+}
+
+.form label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid orange;
+  background: transparent;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.btnn {
+  width: 100%;
+  background: orange;
+  color: black;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.link {
+  margin-top: 10px;
+}
+
+/* Styling for Sign-Up Link and Social Media */
+.form .link a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.form .link a:hover {
+  color: white;
+}
+
+.icons {
+  margin-top: 10px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.icons a:hover {
+  color: orange;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+  }
+  .menu.show-menu {
+    display: flex;
+  }
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  .srch {
+    width: 150px;
+  }
+  .form {
+    width: 90%;
+  }
+}
