@@ -232,7 +232,8 @@ span {
     font-size: 36px;
   }
   .srch {
-    width: 150px;
+    display: block;
+    width: 90px;
   }
   .form {
     width: 90%;
